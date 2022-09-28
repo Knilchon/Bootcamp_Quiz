@@ -8,4 +8,9 @@
 >developing a quiz app
 ###### from then on out we created exactly 3 tasks/storys ↓
 >quiz session, number of questions, Answering questions
-###### 
+###### after that we made sure to also create subtasks to each of the storys to specify the criteria for the quiz
+#### Figma Sketch
+###### in the meantime we also created a figma sketch designing the 
+following pages for the quiz↓
+>landing page, starting page, question pages, result page
+![My Image](images/FigmaSketch.png)
