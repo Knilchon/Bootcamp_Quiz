@@ -1,0 +1,62 @@
+
+body{
+    margin:0;
+    background-color: #D7F5FF;
+    font-family: 'Raleway', sans-serif;
+}
+main{
+    width: 100vw;
+    min-width: 800px;
+    
+}
+section{
+    margin: auto;
+    width: 85%;
+    text-align: center;
+    color: #ffffff;
+}
+
+article{
+    margin: auto;
+    margin-top: 20px;
+    width: 85%;
+    text-align: center;
+    color: #ffffff;
+}
+input, button{
+    background-color: #C584D6;
+    color:#ffffff;
+}
+
+/*IDs*/
+#wrapQuestion{
+    margin:auto;
+    margin-left:80px;
+    margin-right:80px;
+    background-color: #8584D6;
+}
+#quizName{
+    margin:auto;
+    margin-left:80px;
+    margin-right:80px;
+    padding-top: 20px;
+    padding-bottom:20px;
+    display: block;
+    float: both;
+    font-size: 30px;
+    background-color: #8584D6;
+}
+#quizNameSubline{
+    display: block;
+    background-color: #8584D6;
+    margin:auto;
+    margin-left:80px;
+    margin-right:80px;
+}
+#headLogo{
+    
+    margin-top:5px;
+    padding:5px;
+    height: 60px;
+    float:left;
+}
