@@ -17,13 +17,5 @@
 #### Wiki
 ###### we also created a Wiki for our quiz which contains our figma sketch and the UML diagram which is used for quick access to the files
 
-
-
-
-
-
-
-
-
 #### *why did this not work*
-- [x] this did not work :( :unamused:
+- [x] this did not work :unamused:
