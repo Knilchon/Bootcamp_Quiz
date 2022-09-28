@@ -22,6 +22,3 @@
 
 ##### By the way! Here is a really important video explaining our [project](https://www.youtube.com/watch?v=xvFZjo5PgG0) further.
 
-The background color should be #ffffff0
-for light mode and #@d1117 0
-for dark mode.
