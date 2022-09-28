@@ -20,6 +20,7 @@ const questions: Question[] = [
         CorrectAnswer: ["Ant Man"]
     },
 
+<<<<<<< HEAD
     {
         QuestionID: 5,
         Question: "Was davon ist keine Frucht?",
