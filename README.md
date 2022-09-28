@@ -15,5 +15,15 @@
 
 ![My Image](images/FigmaSketch.png)
 #### Wiki
-###### we also created a Wiki for our quiz which contains our figma sketch and the UML diagram
-- [x] this did not work :( :crying:
+###### we also created a Wiki for our quiz which contains our figma sketch and the UML diagram which is used for quick access to the files
+
+
+
+
+
+
+
+
+
+#### *why did this not work*
+- [x] this did not work :( :unamused:
