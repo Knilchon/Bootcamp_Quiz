@@ -20,5 +20,19 @@ const arr: Question[] = [
     ],
     CorrectAnswer: ["Ant Man",
 ]
+},
+
+{
+    QuestionID: 5,
+    Question: "Was davon ist keine Frucht?",
+    Answers: [
+        "Rhabarber",
+        "Tomate",
+        "Avocado",
+        "Apfel",
+
+    ],
+    CorrectAnswer: ["Rhabarber",
+]
 }
 ];
