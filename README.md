@@ -19,3 +19,5 @@
 
 #### *why did this not work*
 - [x] this did not work :unamused:
+
+###### By the way! Here is a really important video explaining our project further:[important video](https://www.youtube.com/watch?v=xvFZjo5PgG0)
