@@ -3,11 +3,11 @@ type Question = {
     QuestionID: number,
     Question: string,
     Answers: string [],
-    CorrectAnswer: string,
+    CorrectAnswer: string [],
 
 }
 
-var arr: Question[] = [
+const arr: Question[] = [
 {
     QuestionID: 3,
     Question: "Welcher Film spielt nicht in der MCU Phase 3?",
@@ -18,6 +18,7 @@ var arr: Question[] = [
         "Black Panther",
 
     ],
-    CorrectAnswer: "Ant Man",
+    CorrectAnswer: ["Ant Man",
+]
 }
 ];
