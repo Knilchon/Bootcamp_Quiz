@@ -30,5 +30,19 @@ const questions: Question[] = [
             "Apfel",
         ],
         CorrectAnswer: ["Rhabarber"]
+    },
+
+
+    {
+        QuestionID: 2,
+        Question: "Wie heißen die kinder von Naruto",
+        Answers: [
+            "Sarada",
+            "Boruto",
+            "Himawari",
+            "Madara",
+        ],
+        CorrectAnswer: ["Boruto", "Himawari"]
     }
+    
 ];
