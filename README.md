@@ -13,4 +13,5 @@
 ###### in the meantime we also created a figma sketch designing the 
 following pages for the quiz↓
 >landing page, starting page, question pages, result page
+
 ![My Image](images/FigmaSketch.png)
