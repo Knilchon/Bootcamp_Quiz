@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "parcel *.html",
+    "build": "parcel build *.html",
     "test": "echo \"Error: no test specified\" && exit 1"
+
   },
   "repository": {
     "type": "git",
@@ -17,6 +20,7 @@
   },
   "homepage": "https://github.com/Knilchon/Bootcamp_Quiz#readme",
   "devDependencies": {
+    "parcel": "^2.7.0",
     "typescript": "^4.8.4"
   }
 }
