@@ -18,6 +18,6 @@
 ###### we also created a Wiki for our quiz which contains our figma sketch and the UML diagram which is used for quick access to the files
 
 #### *why did this not work*
-- [x] this did not work :unamused:
+- [x] no... you cant hit the checkbox... :unamused:
 
 ##### By the way! Here is a really important video explaining our project further:  [very VERY important video](https://www.youtube.com/watch?v=xvFZjo5PgG0)
