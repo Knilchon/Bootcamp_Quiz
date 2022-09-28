@@ -20,4 +20,4 @@
 #### *why did this not work*
 - [x] no... you cant hit the checkbox... :unamused:
 
-##### By the way! Here is a really important video explaining our project further:  [very VERY important video](https://www.youtube.com/watch?v=xvFZjo5PgG0)
+##### By the way! Here is a really important video explaining our [project](https://www.youtube.com/watch?v=xvFZjo5PgG0) further.
