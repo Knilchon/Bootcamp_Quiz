@@ -43,6 +43,18 @@ const questions: Question[] = [
             "Madara",
         ],
         CorrectAnswer: ["Boruto", "Himawari"]
+    },
+
+    {
+        QuestionID: 4,
+        Question: "Wie viele Mitglieder hat die Star Wars 'Cantina Band'?",
+        Answers: [
+            "Drei",
+            "Vier",
+            "Fünf",
+            "Sechs",
+        ],
+        CorrectAnswer: ["Fünf"]
     }
     
 ];
