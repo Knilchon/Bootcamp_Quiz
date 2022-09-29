@@ -4,7 +4,7 @@ window.onload = () => {
 
     /* Input-Element */
     let inputElement = document.createElement("input");     //creates Element inputfield
-    element.appendChild(inputElement); 
+    element.appendChild(inputElement);
     inputElement.id = "inputElement";
     inputElement.setAttribute("placeholder", "Gib deinen Namen ein...");
 
@@ -14,5 +14,4 @@ window.onload = () => {
     buttonElement.id = "buttonElement";
     buttonElement.setAttribute("onclick", "window.location.href = 'quiz.html'");
     buttonElement.textContent = "Quiz starten";
-
 }
