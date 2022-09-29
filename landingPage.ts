@@ -15,8 +15,4 @@ window.onload = () => {
     buttonElement.setAttribute("onclick", "window.location.href = 'quiz.html'");
     buttonElement.textContent = "Quiz starten";
 
-    //let name = inputElement.value;
-    //let dlog = document.createElement("label");
-    //element?.appendChild(dlog);
-
 }
