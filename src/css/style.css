@@ -24,8 +24,8 @@ article{
     color: #ffffff;
 }
 input, button{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     background-color: #C584D6;
     border-color: darkslateblue;
     border-radius: 5px;
@@ -33,6 +33,7 @@ input, button{
     color:#ffffff;
     padding: 8px 22px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: block;
 
 }
 #buttonElement {
@@ -40,12 +41,54 @@ input, button{
     margin-left: 20px;
     border-radius: 8px;
 }
+#answer1Element {
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px 120px;
+}
+#answer2Element {
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px 120px;
+}
+#answer3Element {
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px 120px;
+}
+#answer4Element {
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px 120px;
+}
+#submitElement {
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 58%;
+    width: 90px;
+}
+#nextQuestionElement {
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 58%;
+    width: 90px;
+}
+#questionElement {
+    display: block;
+    padding: 20px;
+}
+#progressElement {
+    float: left;
+    display: block;
+    padding: 10px;
+}
 
 /*IDs*/
 #wrapQuestion{
     margin:auto;
+    padding-bottom: 55px;
     margin-left:80px;
-    margin-right:80px;
+    margin-right:80px; 
     background-color: #8584D6;
 }
 #quizName{

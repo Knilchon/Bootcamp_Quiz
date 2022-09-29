@@ -3,7 +3,8 @@ window.onload = () => {
 
     let questionElement = document.createElement("label");       //creates a question Element
     element.appendChild(questionElement);   
-    questionElement.id = "questionElement"
+    questionElement.id = "questionElement";
+    questionElement.textContent = "Placeholder Text weil wirs brauchen.";
 
     let answer1Element = document.createElement("button");       //creates answer Elements
     element.appendChild(answer1Element); 
@@ -21,6 +22,7 @@ window.onload = () => {
     let progressElement = document.createElement("label");       //creates a progress Element
     element.appendChild(progressElement); 
     progressElement.id = "progressElement";
+    progressElement.textContent = "Progressbar";
 
     let timeElement = document.createElement("label");       //creates a timer Element
     element.appendChild(timeElement); 
@@ -29,7 +31,10 @@ window.onload = () => {
     let submitElement = document.createElement("button");       //creates a submit button Element
     element.appendChild(submitElement); 
     submitElement.id = "submitElement";
+    submitElement.textContent = "Submit";
+
     let nextQuestionElement = document.createElement("button");    //creates a next question Element
     element.appendChild(nextQuestionElement); 
     nextQuestionElement.id = "nextQuestionElement";
+    nextQuestionElement.textContent = "Next";
 }
