@@ -34,23 +34,23 @@ function initilize(){
     answer4Element.id = "answer4Element";
 
 
-    let progressElement = document.createElement("label");       //creates a progress Element
+    let progressElement = document.createElement("label");       //creates a PROGRESS Element
     element.appendChild(progressElement); 
     progressElement.id = "progressElement";
-    progressElement.textContent = prozess.toString() + "/5";
+    progressElement.textContent =  prozess.toString() + "/5";
 
     let timeElement = document.createElement("label");       //creates a timer Element
     element.appendChild(timeElement); 
     timeElement.id = "timeElement";
     timeElement.textContent = "Time";
 
-    let nextQuestionElement = document.createElement("button");    //creates a next question Element
+    let nextQuestionElement = document.createElement("button");    //creates a NEXT question Element
     nextQuestionElement.addEventListener("click",nextQuestion);
     element.appendChild(nextQuestionElement); 
     nextQuestionElement.id = "nextQuestionElement";
     nextQuestionElement.textContent = "Next";
 
-    let submitElement = document.createElement("button");       //creates a submit button Element
+    let submitElement = document.createElement("button");       //creates a SUBMIT button Element
     submitElement.addEventListener("click",submitFunc);
     element.appendChild(submitElement); 
     submitElement.id = "submitElement";
@@ -74,8 +74,9 @@ function nextQuestion(){
 
 }
 function questionCounter(){
-    let prozessIntContent: number = +document.getElementById("progressElement").textContent;
-    document.getElementById("progressElement").textContent = prozessIntContent.toString() + "/5";
+    ++prozess;
+    //let prozessIntContent: number = +document.getElementById("progressElement").textContent;
+    document.getElementById("progressElement").textContent = prozess.toString() + "/5";
     //console.log(newProzess);
     }
 function compareAnswers(){
