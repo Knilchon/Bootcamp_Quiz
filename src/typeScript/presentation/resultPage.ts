@@ -9,7 +9,9 @@ window.onload = () => {
     element.appendChild(scoreboardElement);
     scoreboardElement.id = "scoreboardElement";
 
-    let continueElement = document.createElement("button");       //creates button element
-    element.appendChild(continueElement);
-    continueElement.id = "continueElement";
+    let restartElement = document.createElement("button");       //(creates button element )
+    element.appendChild(restartElement);
+    restartElement.id = "restartElement";
+    restartElement.setAttribute("onclick", "window.location.href = 'quiz.html'");
+    restartElement.textContent = "Neustart"
 }
