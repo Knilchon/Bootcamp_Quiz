@@ -2,12 +2,19 @@
 window.onload = () => {
     let element = document.getElementById("wrapQuestion");       //connects to div in index file
 
+    /* Input-Element */
     let inputElement = document.createElement("input");     //creates Element inputfield
     element.appendChild(inputElement); 
-    inputElement.outerHTML = "<input id=\"inputElement\" placeholder=\"Gib deinen Namen ein...\">";
+    inputElement.id = "inputElement";
+    inputElement.setAttribute("placeholder", "Gib deinen Namen ein...");
+
+    /* Button-Element */
     let buttonElement = document.createElement("button");       //creates Element button
     element.appendChild(buttonElement); 
-    buttonElement.outerHTML = "<button onclick=\"window.location.href = 'quiz.html';\" id=\"buttonElement\">Quiz starten</button>"
+    buttonElement.id = "buttonElement";
+    buttonElement.setAttribute("onclick", "window.location.href = 'quiz.html'");
+    buttonElement.textContent = "Quiz starten";
+
     //let name = inputElement.value;
     //let dlog = document.createElement("label");
     //element?.appendChild(dlog);
