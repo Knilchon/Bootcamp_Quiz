@@ -2,10 +2,11 @@
   "name": "bootcamp_quiz",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "parcel *.html",
-    "build": "parcel build *.html",
+    "start": "parcel ./src/html/*.html",
+    "serve": "parcel ./src/html/quiz.html",
+    "result": "parcel ./src/html/resultPage.html",
+    "build": "parcel build ./src/html/*.html",
     "test": "echo \"Error: no test specified\" && exit 1"
 
   },
