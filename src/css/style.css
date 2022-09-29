@@ -24,8 +24,21 @@ article{
     color: #ffffff;
 }
 input, button{
+    margin-top: 50px;
+    margin-bottom: 50px;
     background-color: #C584D6;
+    border-color: darkslateblue;
+    border-radius: 5px;
+    text-align: center;
     color:#ffffff;
+    padding: 8px 22px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+#buttonElement {
+    padding: 8px 30px;
+    margin-left: 20px;
+    border-radius: 8px;
 }
 
 /*IDs*/
