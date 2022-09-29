@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "parcel *.html",
-    "serve": "parcel quiz.html",
-    "result": "parcel resultPage.html",
-    "build": "parcel build *.html",
+    "start": "parcel ./src/html/*.html",
+    "serve": "parcel ./src/html/quiz.html",
+    "result": "parcel ./src/html/resultPage.html",
+    "build": "parcel build ./src/html/*.html",
     "test": "echo \"Error: no test specified\" && exit 1"
 
   },

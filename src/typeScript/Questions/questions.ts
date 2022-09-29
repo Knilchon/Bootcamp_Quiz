@@ -1,4 +1,4 @@
-type Question = {
+type Questions = {
 
     QuestionID: number,
     Question: string,
@@ -7,7 +7,7 @@ type Question = {
 
 }
 
-const questions: Question[] = [
+const questions: Questions[] = [
     
     {
         QuestionID: 1,
