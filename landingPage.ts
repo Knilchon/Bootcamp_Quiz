@@ -4,10 +4,10 @@ window.onload = () => {
 
     let inputElement = document.createElement("input");     //creates Element inputfield
     element.appendChild(inputElement); 
-    inputElement.id = "inputElement";
+    inputElement.outerHTML = "<input id=\"inputElement\" placeholder=\"Gib deinen Namen ein...\">";
     let buttonElement = document.createElement("button");       //creates Element button
     element.appendChild(buttonElement); 
-    buttonElement.id = "buttonElement"; 
+    buttonElement.outerHTML = "<button onclick=\"window.location.href = 'quiz.html';\" id=\"buttonElement\">Quiz starten</button>"
     //let name = inputElement.value;
     //let dlog = document.createElement("label");
     //element?.appendChild(dlog);
