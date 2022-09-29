@@ -39,7 +39,7 @@ function initilize(){
     progressElement.id = "progressElement";
     progressElement.textContent =  prozess.toString() + "/5";
 
-    let timeElement = document.createElement("label");       //creates a timer Element
+    let timeElement = document.createElement("label");       //creates a TIMER Element
     element.appendChild(timeElement); 
     timeElement.id = "timeElement";
     timeElement.textContent = "Time";
@@ -82,4 +82,7 @@ function questionCounter(){
 function compareAnswers(){
     //compares button labels with given answer and tells them if they should be slected => /bool shouldSelect = true;
     //compares if shouldSelect is true and if the value is "Selected"
+}
+function timer(){
+    
 }
