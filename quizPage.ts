@@ -1,5 +1,6 @@
 let prozess = 1;
-
+let time = 0;
+let quizIsRunning = true;
 window.onload = function(){
     initilize()
 };
@@ -39,6 +40,7 @@ function initilize(){
     progressElement.textContent =  prozess.toString() + "/5";
 
     let timeElement = document.createElement("label");       //creates a TIMER Element
+    timeElement.textContent = "TIME";
     element.appendChild(timeElement); 
     timeElement.id = "timeElement";
 
@@ -78,4 +80,7 @@ function questionCounter(){
 function compareAnswers(){
     //compares button labels with given answer and tells them if they should be slected => /bool shouldSelect = true;
     //compares if shouldSelect is true and if the value is "Selected"
+}
+function timer(){
+    
 }
