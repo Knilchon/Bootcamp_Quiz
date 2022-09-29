@@ -8,6 +8,19 @@ type Question = {
 }
 
 const questions: Question[] = [
+    
+    {
+        QuestionID: 1,
+        Question: "Welche von den unten genanten Pflanzen ist keine Beere?",
+        Answers: [
+            "Kürbis",
+            "Radieschen",
+            "Banane",
+            "Gurke",
+        ],
+        CorrectAnswer: ["Radieschen"]
+    },
+    
     {
         QuestionID: 3,
         Question: "Welcher Film spielt nicht in der MCU Phase 3?",
