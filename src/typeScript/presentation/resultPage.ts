@@ -4,6 +4,7 @@ window.onload = () => {
     let resultElement = document.createElement("label");           //creates result element
     element.appendChild(resultElement);
     resultElement.id = "resultElement";
+    resultElement.textContent = "You answered 4 of 5 Questions correctly!"
 
     let scoreboardElement = document.createElement("label");      //creates scoreboard element
     element.appendChild(scoreboardElement);
