@@ -6,6 +6,7 @@
   "scripts": {
     "start": "parcel *.html",
     "serve": "parcel quiz.html",
+    "result": "parcel resultPage.html",
     "build": "parcel build *.html",
     "test": "echo \"Error: no test specified\" && exit 1"
 
