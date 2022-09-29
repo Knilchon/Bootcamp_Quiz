@@ -64,13 +64,13 @@ input, button{
 #submitElement {
     position: absolute;
     margin-top: 0px;
-    margin-left: 58%;
+    margin-left: 68%;
     width: 90px;
 }
 #nextQuestionElement {
     position: absolute;
     margin-top: 0px;
-    margin-left: 58%;
+    margin-left: 68%;
     width: 90px;
 }
 #questionElement {
