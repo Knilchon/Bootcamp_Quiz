@@ -82,6 +82,14 @@ input, button{
     display: block;
     padding: 10px;
 }
+#resultElement {
+    display: block;
+    padding: 20px;
+}
+#continueElement {
+    margin: auto;
+    width: 120px;
+}
 
 /*IDs*/
 #wrapQuestion{
