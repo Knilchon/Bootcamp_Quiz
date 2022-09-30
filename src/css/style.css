@@ -36,41 +36,54 @@ input, button{
     display: block;
 
 }
+
+a:link, a:visited  {
+    text-decoration: none;
+    color:#ffffff;
+}
+
+/*CLASS Style Rules*/
+.answerElements{
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    min-width: 240px;
+    max-width: 80%;
+}
+
 /*IDs Style Rules*/
-#buttonElement {
+#buttonElement, #restartElement {
+    display: inline;
     padding: 8px 30px;
-    margin-left: 20px;
+    margin-top: 60px;
     border-radius: 8px;
 }
+#inputElement{
+    display: inline;
+    margin: ;
+}
 #answer1Element {
-    margin: auto;
-    margin-bottom: 10px;
-    padding: 10px 120px;
+
 }
 #answer2Element {
-    margin: auto;
-    margin-bottom: 10px;
-    padding: 10px 120px;
+
 }
 #answer3Element {
-    margin: auto;
-    margin-bottom: 10px;
-    padding: 10px 120px;
+
 }
 #answer4Element {
-    margin: auto;
-    margin-bottom: 10px;
-    padding: 10px 120px;
+
 }
 #submitElement {
     float:right;
+    margin-right: 10px;
     margin-top: 0px;
     display: inline;
 }
 #nextQuestionElement {
     float: right;
+    margin-right: 10px;
     margin-top: 0px;
-
     display: none;
 }
 #questionElement {
@@ -108,6 +121,7 @@ input, button{
     font-size: 30px;
     background-color: #8584D6;
 }
+
 #quizNameSubline{
     display: block;
     background-color: #8584D6;

@@ -21,22 +21,26 @@ function initilize(){
     let answer1Element = document.createElement("button");       //creates answer Elements
     answer1Element.addEventListener("click",selectFunc);
     element.appendChild(answer1Element); 
-    answer1Element.id = "answer1Element"
+    answer1Element.id = "answer1Element";
+    answer1Element.className = "answerElements"
 
     let answer2Element = document.createElement("button");  
     answer2Element.addEventListener("click",selectFunc);
     element.appendChild(answer2Element);      
     answer2Element.id = "answer2Element";
+    answer2Element.className = "answerElements"
 
     let answer3Element = document.createElement("button");     
     answer3Element.addEventListener("click",selectFunc);
     element.appendChild(answer3Element);   
     answer3Element.id = "answer3Element";
+    answer3Element.className = "answerElements"
 
     let answer4Element = document.createElement("button");   
     answer4Element.addEventListener("click",selectFunc);
     element.appendChild(answer4Element);     
     answer4Element.id = "answer4Element";
+    answer4Element.className = "answerElements"
 
 
     let progressElement = document.createElement("label");       //creates a PROGRESS Element
