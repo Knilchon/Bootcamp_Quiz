@@ -1,8 +1,12 @@
+import { shuffle } from "../presentation/quizBuilder";
+import { questions } from "../Questions/questions";
+
 let prozess = 1;
 let time = 0;
 let quizIsRunning = true;
 window.onload = function(){
     initilize()
+    console.log(shuffle(questions));
 };
    
 function initilize(){
