@@ -7,7 +7,7 @@ type Questions = {
 
 }
 
-const questions: Questions[] = [
+export const questions: Questions[] = [
     
     {
         QuestionID: 1,
