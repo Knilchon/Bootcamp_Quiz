@@ -1,7 +1,4 @@
-import { questions } from "../Questions/questions";
-
-
-export function shuffle(questionArray){
+export function questionShuffle(questionArray){
     let currentIndex = questionArray.length;
     let randomIndex;
 
