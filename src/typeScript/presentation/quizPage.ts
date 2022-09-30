@@ -39,10 +39,10 @@ function initilize(){
     progressElement.id = "progressElement";
     progressElement.textContent =  prozess.toString() + "/5";
 
-    let timeElement = document.createElement("label");       //creates a TIMER Element
+    /*let timeElement = document.createElement("label");       //creates a TIMER Element
     element.appendChild(timeElement); 
     timeElement.id = "timeElement";
-    timeElement.textContent = "Time";
+    timeElement.textContent = "Time"; */
 
     let nextQuestionElement = document.createElement("button");    //creates a NEXT question Element
     nextQuestionElement.addEventListener("click",nextQuestion);
@@ -65,12 +65,22 @@ function selectFunc(){
     }
 }
 function submitFunc(){
-    //hidSub();
+    //hideSub Button
+        let submitElement = document.getElementById("submitElement");
+        submitElement.style.display = 'none';
     compareAnswers();
-    //unhideNext();
+    //unhideNext Button
+        let nextQuestionElement = document.getElementById("nextQuestionElement");
+        nextQuestionElement.style.display = 'inline'; 
 }
 function nextQuestion(){
+        //hide Next Button
+        let nextQuestionElement = document.getElementById("nextQuestionElement");
+        nextQuestionElement.style.display = 'none';
     questionCounter();
+        //unhide Sub Button
+        let submitElement = document.getElementById("submitElement");
+        submitElement.style.display = 'inline';
 
 }
 function questionCounter(){
