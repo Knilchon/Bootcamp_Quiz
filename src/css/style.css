@@ -64,19 +64,13 @@ input, button{
 }
 #submitElement {
     float:right;
-    /*position: absolute; */
     margin-top: 0px;
-    /* margin-left: 68%;
-    width: 90px;*/
     display: inline;
 }
 #nextQuestionElement {
     float: right;
-    /*position: absolute; */
     margin-top: 0px;
-    /* margin-left: 68%;
-    width: 90px; 
-    visibility: hidden;*/
+
     display: none;
 }
 #questionElement {
