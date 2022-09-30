@@ -12,7 +12,7 @@ window.onload = function () {
 };
 
 function initilize() {
-    let element = document.getElementById("wrapQuestion");      //declares connection to a given div
+    let element = document.getElementById("wrapQuestion") as HTMLDivElement;      //declares connection to a given div
 
     let questionElement = document.createElement("label");       //creates a question Element
     element.appendChild(questionElement);
@@ -79,20 +79,29 @@ function selectFunc() {
 
 function submitFunc() {
     //hideSub Button
-    let submitElement = document.getElementById("submitElement");
+    let submitElement = document.getElementById("submitElement") as HTMLButtonElement;
     submitElement.style.display = 'none';
     compareAnswers();
     //unhideNext Button
-    let nextQuestionElement = document.getElementById("nextQuestionElement");
+    let nextQuestionElement = document.getElementById("nextQuestionElement") as HTMLButtonElement;
     nextQuestionElement.style.display = 'inline';
 }
 
 function incQuestionIndex() {
-    document.getElementById("questionElement").textContent = quiz[prozess - 1].Question;
-    document.getElementById("answer1Element").textContent = quiz[prozess - 1].Answers[0];
-    document.getElementById("answer2Element").textContent = quiz[prozess - 1].Answers[1];
-    document.getElementById("answer3Element").textContent = quiz[prozess - 1].Answers[2];
-    document.getElementById("answer4Element").textContent = quiz[prozess - 1].Answers[3];
+    let questionElement = document.getElementById("questionElement") as HTMLLabelElement;
+    questionElement.textContent = quiz[prozess - 1].Question;
+
+    let answer1Buttton = document.getElementById("answer1Element") as HTMLButtonElement;
+    answer1Buttton.textContent = quiz[prozess - 1].Answers[0];
+
+    let answer2Buttton = document.getElementById("answer2Element") as HTMLButtonElement;
+    answer2Buttton.textContent = quiz[prozess - 1].Answers[1];
+
+    let answer3Buttton = document.getElementById("answer3Element") as HTMLButtonElement;
+    answer3Buttton.textContent = quiz[prozess - 1].Answers[2];
+
+    let answer4Buttton = document.getElementById("answer4Element") as HTMLButtonElement;
+    answer4Buttton.textContent = quiz[prozess - 1].Answers[3];
 }
 
 function nextQuestion() {
@@ -103,11 +112,11 @@ function nextQuestion() {
         document.getElementById("answer3Element"),
         document.getElementById("answer4Element"));
     //hide Next Button
-    let nextQuestionElement = document.getElementById("nextQuestionElement");
+    let nextQuestionElement = document.getElementById("nextQuestionElement") as HTMLButtonElement;
     nextQuestionElement.style.display = 'none';
     questionCounter();
     //unhide Sub Button
-    let submitElement = document.getElementById("submitElement");
+    let submitElement = document.getElementById("submitElement") as HTMLButtonElement;
     submitElement.style.display = 'inline';
     incQuestionIndex();
 }
@@ -115,7 +124,8 @@ function nextQuestion() {
 function questionCounter() {
     ++prozess;
     //let prozessIntContent: number = +document.getElementById("progressElement").textContent;
-    document.getElementById("progressElement").textContent = prozess.toString() + "/5";
+    let progressLabel = document.getElementById("progressElement") as HTMLLabelElement;
+    progressLabel.textContent = prozess.toString() + "/5";
     //console.log(newProzess);
 }
 
