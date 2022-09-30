@@ -6,7 +6,8 @@ let prozess = 1;
 let time = 0;
 let quizIsRunning = true;
 window.onload = function(){
-    initilize()
+    initilize();
+    incQuestionIndex();
     //console.log(quiz);
 };
    
@@ -16,7 +17,6 @@ function initilize(){
     let questionElement = document.createElement("label");       //creates a question Element
     element.appendChild(questionElement);   
     questionElement.id = "questionElement";
-    questionElement.textContent = "Placeholder Text weil wirs brauchen.";
 
     let answer1Element = document.createElement("button");       //creates answer Elements
     answer1Element.addEventListener("click",selectFunc);
@@ -78,6 +78,13 @@ function submitFunc(){
         let nextQuestionElement = document.getElementById("nextQuestionElement");
         nextQuestionElement.style.display = 'inline'; 
 }
+function incQuestionIndex(){
+    document.getElementById("questionElement").textContent = quiz[prozess-1].Question;
+    document.getElementById("answer1Element").textContent = quiz[prozess-1].Answers[0];
+    document.getElementById("answer2Element").textContent = quiz[prozess-1].Answers[1];
+    document.getElementById("answer3Element").textContent = quiz[prozess-1].Answers[2];
+    document.getElementById("answer4Element").textContent = quiz[prozess-1].Answers[3];
+}
 function nextQuestion(){
         //hide Next Button
         let nextQuestionElement = document.getElementById("nextQuestionElement");
@@ -86,7 +93,7 @@ function nextQuestion(){
         //unhide Sub Button
         let submitElement = document.getElementById("submitElement");
         submitElement.style.display = 'inline';
-
+    incQuestionIndex();
 }
 function questionCounter(){
     ++prozess;
