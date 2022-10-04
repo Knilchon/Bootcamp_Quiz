@@ -1,5 +1,5 @@
 window.onload = () => {
-    let element = document.getElementById("wrapQuestion");
+    let element = document.getElementById("wrapQuestion") as HTMLDivElement;
 
     let resultElement = document.createElement("label");           //creates result element
     element.appendChild(resultElement);

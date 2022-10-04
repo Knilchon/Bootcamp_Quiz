@@ -5,13 +5,15 @@ let quiz = questionShuffle(questions);
 let prozess = 1;
 let time = 0;
 let quizIsRunning = true;
+let points = 0;
+let answerCount: number = 0;
+
 window.onload = function () {
-    initilize();
+    loadElements();
     incQuestionIndex();
-    //console.log(quiz);
 };
 
-function initilize() {
+function loadElements() {
     let element = document.getElementById("wrapQuestion") as HTMLDivElement;      //declares connection to a given div
 
     let questionElement = document.createElement("label");       //creates a question Element
@@ -48,10 +50,10 @@ function initilize() {
     progressElement.id = "progressElement";
     progressElement.textContent = prozess.toString() + "/5";
 
-    /*let timeElement = document.createElement("label");       //creates a TIMER Element
-    element.appendChild(timeElement); 
+    let timeElement = document.createElement("label");       //creates a TIMER Element
+    element.appendChild(timeElement);
     timeElement.id = "timeElement";
-    timeElement.textContent = "Time"; */
+    timeElement.textContent = "time";
 
     let nextQuestionElement = document.createElement("button");    //creates a NEXT question Element
     nextQuestionElement.addEventListener("click", nextQuestion);
@@ -74,7 +76,6 @@ function selectFunc() {
         this.value = "Selected";
         this.style.backgroundColor = "#d17e3e";
     }
-
 }
 
 function submitFunc() {
@@ -105,12 +106,6 @@ function incQuestionIndex() {
 }
 
 function nextQuestion() {
-    let buttonArray = new Array;
-    buttonArray.push(
-        document.getElementById("answer1Element"),
-        document.getElementById("answer2Element"),
-        document.getElementById("answer3Element"),
-        document.getElementById("answer4Element"));
     //hide Next Button
     let nextQuestionElement = document.getElementById("nextQuestionElement") as HTMLButtonElement;
     nextQuestionElement.style.display = 'none';
@@ -118,15 +113,16 @@ function nextQuestion() {
     //unhide Sub Button
     let submitElement = document.getElementById("submitElement") as HTMLButtonElement;
     submitElement.style.display = 'inline';
+
     incQuestionIndex();
+    reset();
 }
 
 function questionCounter() {
     ++prozess;
-    //let prozessIntContent: number = +document.getElementById("progressElement").textContent;
+    
     let progressLabel = document.getElementById("progressElement") as HTMLLabelElement;
     progressLabel.textContent = prozess.toString() + "/5";
-    //console.log(newProzess);
 }
 
 function compareAnswers() {
@@ -143,23 +139,54 @@ function compareAnswers() {
         document.getElementById("answer4Element"));
 
     buttonArray.forEach(button => {
+        button.x =0;   
+        
         rightAnswers.forEach(answer => {
 
             if (button.textContent === answer && button.value === "Selected") {
                 button.style.backgroundColor = "#05ae4c";
                 button.value = "Unselected";
+                button.x = "Right";
             } else if (button.textContent !== answer && button.value === "Selected"
                 || button.textContent === answer && button.value !== "Selected") {
 
                 button.style.backgroundColor = "#da1313";
+                button.x = "Wrong";
             }
         });
 
     });
 
-
+    let answerCount: number = 0;
+    buttonArray.forEach(button => {
+        if (button.x === "Right") {
+            ++answerCount;
+        }
+        if(button.x == "Wrong") {
+            --answerCount;
+        }
+    });
+    if (answerCount == rightAnswers.length) {
+        ++points;
+    }
+    console.log(points);
 }
 
 function timer() {
 
+}
+
+function reset() {
+    let buttonArray = new Array;
+    buttonArray.push(
+        document.getElementById("answer1Element"),
+        document.getElementById("answer2Element"),
+        document.getElementById("answer3Element"),
+        document.getElementById("answer4Element"));
+
+    buttonArray.forEach(button => {
+        button.value = "Unselected";
+        button.style.backgroundColor = "#C584D6";
+        answerCount = 0;
+    });
 }
