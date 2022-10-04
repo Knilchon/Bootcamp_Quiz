@@ -1,6 +1,6 @@
 
 window.onload = () => {
-    let element = document.getElementById("wrapQuestion");       //connects to div in index file
+    let element = document.getElementById("wrapQuestion") as HTMLDivElement;       //connects to div in index file
 
     /* Input-Element */
     let inputElement = document.createElement("input");     //creates Element inputfield
